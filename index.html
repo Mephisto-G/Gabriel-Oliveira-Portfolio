@@ -1,114 +1,79 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Pessoal</title>
-    <link rel="stylesheet" href="CSS/Estilo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Gabriel Alves Oliveira | Desenvolvedor Fullstack</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 
 <body>
-    <nav> <!-- Navegação do site -->
-        <ul class="link">
-            <li>
-                <a href="#sobre"> 
-                    <p>Sobre mim</p>
-                    <i class="fa-solid fa-face-smile-wink"></i>
-                </a>
-            </li>
-            <li><a href="#formacao">
-                    <p>Formação</p><i class="fa-solid fa-book"></i>
-                </a></li>
-            <li><a href="#portfolio">
-                    <p>Portfólio</p><i class="fa-solid fa-briefcase"></i>
-                </a></li>
-            <li><a href="#contato">
-                    <p>Contato</p><i class="fa-solid fa-phone"></i>
-                </a></li>
-        </ul>
-    </nav>
-    <section class="container">  <!-- Conteudo principal -->
-        <div id="sobre">  <!-- Conteudo sobre mim -->
-            <h1>Bem Vindo.</h1>
-            <p>Olá sou Gabriel Oliveira, Atualmente estou morando em São Paulo/SP.
-                Estudante de programação no curso engenharia de software.<br><br>
-                Sou um pessoa que gosta bastante de técnologia e estou sempre atento as novidades. Gosto de jogar,
-                Ler livros e mangas, é assistir filmes.
-            </p>
-        </div>
 
-        <div id="formacao"><!--  Conteudo sobre a formação -->
-            <div id="esquerda">
-                <div class="esquerda-info">  <!-- Formação coluna esquerda -->
-                    <h3>Formação</h3>
-                    <p>Redes de Computadores<br>
-                        FIAP 2018/2019
-                    </p>
-                    <p>Engenharia de Software<br>
-                        UNINTER 2025/2030
-                    </p>
-                </div>
-                <div class="esquerda-info">
-                    <h3>Idiomas</h3>
-                    <p>Português - Nativo</p>
-                    <p>Inglês - Avançado</p>
-                </div>
-            </div>
+    <!-- Cantos decorativos -->
+    <div class="corner-tl" aria-hidden="true"></div>
+    <div class="corner-tl-shape" aria-hidden="true"></div>
+    <div class="corner-br" aria-hidden="true"></div>
+    <div class="corner-br-shape" aria-hidden="true"></div>
 
-            <div id="direita"> <!-- Formação coluna direita -->
-                <h1>Habilidades</h1>
-                <div>
-                   <img src="IMG/powershell.png" class="imgprog" alt="Logo powershell">
-                    <img src="IMG/git.png" class="imgprog" alt="Logo git">
-                    <img src="IMG/linux.png" class="imgprog" alt="Logo linux">
-                    <img src="IMG/mysql.png" class="imgprog" alt="Logo mysql">
-                    <img src="IMG/html.png" class="imgprog" alt="Logo html">
-                    <img src="IMG/css.png" class="imgprog" alt="Logo css">
-                    <img src="IMG/js.png" class="imgprog" alt="Logo JavaScript">
-                    <img src="IMG/python.png" class="imgprog" alt="Logo python">
-                </div>
-            </div>
+    <!-- Header: Cabeçalho do site -->
+    <header>
+        <nav class="social-icons" aria-label="Links de contato e redes sociais">
+            <a href="mailto:Ikurosaki531@gmail.com?subject=Contato%20pelo%20Portfolio&body=Olá,%20Gabriel!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20saber%20mais%20sobre%20suas%20habilidades." 
+               title="Ikurosaki531@gmail.com" 
+               aria-label="Enviar e-mail">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                </svg>
+            </a>
+            <a href="https://github.com/Mephisto-G" aria-label="Visitar perfil no GitHub" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z" />
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/gabriel-oliveira-674258252/" aria-label="Visitar perfil no LinkedIn" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                </svg>
+            </a>
+        </nav>
+    </header>
 
-        </div>
-        <div id="portfolio"> <!-- Conteudo portfolio -->
-            <h3 span id="h3portfolio">Portfólio</h3>
-            <div>
-                <div class="projetos">
-                    <a href="Pagina/Pagina.html" target="_blank">Pagina Assassin's Creed</a>
-                    <iframe src="Pagina/Pagina.html" width="100%" height="200px"></iframe>
-                </div>
-                <div class="projetos">
-                    <a href="https://github.com/Mephisto-G/Uninter-Main/tree/main/L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o%20e%20Algoritmos/Trabalho"
-                        target="_blank">
-                        Exércicios - Logica de Programação</a>
-                    <a href="https://github.com/Mephisto-G/Uninter-Main/tree/main/L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o%20e%20Algoritmos/Trabalho"
-                        target="_blank">
-                        <img src="IMG/1_flCjLnXIFhgFJkB30YjN0g.jpg" width="100%" height="200px"
-                            alt="Imagem com codigos em python"></a>
-                </div>
+    <!-- Main: Conteúdo principal da página -->
+    <main class="main-content">
+        
+        <!-- Section: Seção de apresentação -->
+        <section class="left-section" aria-labelledby="welcome-heading">
+            <h1 id="welcome-heading" class="welcome-title">Bem Vindo.</h1>
+            <div class="about-text">
+                <p>Meu nome é Gabriel Alves Oliveira, desenvolvedor fullstack baseado em São Paulo.</p>
+                <p>Tenho paixão por criar soluções de automação e sites responsivos que unem funcionalidade e experiência de usuário.</p>
+                <p><strong>Skills:</strong> Python · JavaScript · HTML/CSS · React · Node.js · Git</p>
             </div>
-        </div>
-        <div id="contato"> <!-- Conteudo Contato -->
-            <form action="" method="post">
-                <h3>Preencha o formulário para entrar em contato</h3>
-                <label for="nome">Nome</label>
-                <input type="text" placeholder="Insira seu nome...">
-                <label for="email">E-mail</label>
-                <input type="email" placeholder="Insira seu E-mail...">
-                <label for="mensagem">Mensagem</label>
-                <input type="text" placeholder="Insira sua mensagem..">
-                <button type="button">Enviar</button>
-            </form>
-        </div>
-    </section>
-    <footer> <!-- Rodapé -->
-        <small> Gabriel Oliveira - 2025</small>
+        </section>
+
+        <!-- Section: Seção de projetos -->
+        <section class="projects-section" aria-labelledby="projects-heading">
+            <h2 id="projects-heading" class="projects-title">Projetos</h2>
+            
+            <!-- Ul/Li: Listas de itens devem ser semanticamente listas, não apenas divs -->
+            <ul class="projects-list">
+                <li>
+                    <a href="https://mephisto-g.github.io/Site-Assassin-s-Creed/" title="Site com foco em responsividade e UX" target="_blank" rel="noopener noreferrer">Game-Page</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Mephisto-G/BotFinancas" title="Bot financeiro que opera no WhatsApp com automação" target="_blank" rel="noopener noreferrer">Bot-Finanças</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Mephisto-G/GalaticCat" title="Jogo em Python com Pygame - Foco em POO e arquitetura" target="_blank" rel="noopener noreferrer">GalacticCat</a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Footer: Rodapé do site -->
+    <footer>
+        <p>&copy;2026 Gabriel Alves Oliveira</p>
     </footer>
 </body>
-
-
 </html>
-
-

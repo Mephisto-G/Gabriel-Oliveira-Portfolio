@@ -1,0 +1,328 @@
+/* =========================================
+   1. IMPORTAÇÃO DE FONTES E RESET
+   ========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1e;
+    color: #c8c8c8;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    line-height: 1.6;
+}
+
+/* =========================================
+   2. CANTOS DECORATIVOS
+   ========================================= */
+/* Canto Superior Esquerdo */
+.corner-tl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.corner-tl::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 100%;
+    background: linear-gradient(to bottom, #b8a44c, #6b6b6b);
+}
+
+.corner-tl::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to right, #b8a44c, #6b6b6b);
+}
+
+.corner-tl-shape {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    z-index: 9;
+    pointer-events: none;
+}
+
+.corner-tl-shape::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 0;
+    height: 0;
+    border-top: 112px solid #1a1a1e;
+    border-right: 112px solid transparent;
+}
+
+/* Canto Inferior Direito */
+.corner-br {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.corner-br::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8px;
+    height: 100%;
+    background: linear-gradient(to top, #b8a44c, #6b6b6b);
+}
+
+.corner-br::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to left, #b8a44c, #6b6b6b);
+}
+
+.corner-br-shape {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    z-index: 9;
+    pointer-events: none;
+}
+
+.corner-br-shape::before {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 0;
+    height: 0;
+    border-bottom: 112px solid #1a1a1e;
+    border-left: 112px solid transparent;
+}
+
+/* =========================================
+   3. HEADER E ÍCONES SOCIAIS
+   ========================================= */
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 60px;
+    position: relative;
+    z-index: 20;
+}
+
+.social-icons {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a svg {
+    width: 24px;
+    height: 24px;
+    fill: #888;
+    transition: fill 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+}
+
+.social-icons a:hover svg {
+    fill: #b8a44c;
+}
+
+/* =========================================
+   4. CONTEÚDO PRINCIPAL (MAIN)
+   ========================================= */
+.main-content {
+    display: flex;
+    padding: 60px 60px 40px;
+    gap: 80px;
+    min-height: calc(100vh - 180px);
+    position: relative;
+    z-index: 20;
+    /* align-items: flex-start; */
+    justify-content: center;
+}
+
+/* Seção Esquerda: Apresentação */
+.left-section {
+    flex: 1;
+    max-width: 650px;
+}
+
+.welcome-title {
+    font-size: 72px;
+    font-weight: 200;
+    color: #e0e0e0;
+    margin-bottom: 40px;
+    letter-spacing: -1px;
+}
+
+.about-text {
+    border-left: 2px solid #b8a44c;
+    padding-left: 24px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #a0a0a0;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.about-text p strong {
+    color: #d4d4d4;
+    font-weight: 500;
+}
+
+/* Seção Direita: Projetos */
+.projects-section {
+    flex: 0 0 350px;
+    padding-top: 10px;
+}
+
+.projects-title {
+    font-size: 28px;
+    font-weight: 300;
+    color: #e0e0e0;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+.projects-list {
+    list-style: none;
+    border-left: 2px solid #b8a44c;
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.projects-list li a {
+    color: #a0a0a0;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #444;
+    display: inline-block;
+    transition: color 0.3s ease, border-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.projects-list li a:hover {
+    color: #b8a44c;
+    border-bottom-color: #b8a44c;
+    padding-left: 8px;
+}
+
+/* =========================================
+   5. FOOTER
+   ========================================= */
+footer {
+    text-align: right;
+    padding: 20px 60px 40px;
+    position: relative;
+    z-index: 20;
+}
+
+footer p {
+    font-size: 13px;
+    color: #666;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+/* =========================================
+   6. RESPONSIVIDADE (Mobile e Tablets)
+   ========================================= */
+@media (max-width: 900px) {
+    .main-content {
+        flex-direction: column;
+        padding: 40px 30px;
+        gap: 60px;
+    }
+
+    .welcome-title {
+        font-size: 52px;
+    }
+
+    .projects-section {
+        flex: none;
+        width: 100%;
+    }
+
+    header {
+        padding: 20px 30px;
+        justify-content: center;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px 30px 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .welcome-title {
+        font-size: 42px;
+    }
+
+    .about-text p {
+        font-size: 15px;
+    }
+
+
+    .corner-tl, .corner-tl-shape,
+    .corner-br, .corner-br-shape {
+        width: 60px;
+        height: 60px;
+    }
+
+    .corner-tl-shape::before {
+        border-top-width: 52px;
+        border-right-width: 52px;
+    }
+
+    .corner-br-shape::before {
+        border-bottom-width: 52px;
+        border-left-width: 52px;
+    }
+}
