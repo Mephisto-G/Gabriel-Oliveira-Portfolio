@@ -213,6 +213,17 @@ header {
     font-weight: 500;
 }
 
+.skill-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left-section h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
 /* Seção Direita: Projetos */
 .projects-section {
     flex: 0 0 350px;
